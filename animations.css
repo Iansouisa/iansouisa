@@ -173,7 +173,17 @@
   color: black;
 }
 .flip-card-back {
-  background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+  padding: 24px;
+}
+#front-easylead {
+  background-image: url(./assets/images/easylead.jpg);
+}
+#front-mailforge {
+  background-image: url(./assets/images/mailforge.jpg);
+}
+#hero-image {
+  background-image: url("./assets/images/iansouisa2.jpeg");
+  transform: scaleX(-1);
 }
