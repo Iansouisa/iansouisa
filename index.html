@@ -3,321 +3,500 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="./assets/icons/ids-favicon.png" />
-    <link rel="stylesheet" href="output.css" />
-    <link rel="stylesheet" href="animations.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/icons/dominium-favicon.png"
+    />
+    <link rel="stylesheet" href="/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Comforter&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <title>Ian Souisa</title>
+    <title>Dominium Ecom</title>
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-M8V7DJP05B"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
 
-    gtag("config", "G-M8V7DJP05B");
-  </script>
-  <body class="overflow-x-hidden bg-[#080808]">
-    <div class="fixed top-0 left-0 z-[-1] h-screen w-screen">
-      <div
-        class="h-full w-full bg-linear-to-br from-transparent via-transparent to-[#132054]"
-      ></div>
-    </div>
+  <body class="body-gradient-background">
     <header
-      class="to-transparant fixed top-0 z-9999 flex w-full justify-center bg-linear-to-b from-[#080808] px-10 py-6 text-[#F2F2F2] max-sm:px-4"
+      class="bg-bg-dark z-99 flex h-fit justify-center py-3 max-sm:h-12 max-sm:py-3"
     >
-      <div class="flex h-[40px] w-[1280px] items-center">
-        <div class="w-[15%] max-lg:w-full">
-          <a href="/" class="w-[40px]">
-            <img
-              src="./assets/logo/ids-logo.svg"
-              alt="ian souisa logo"
-              class="logo relative z-9999 w-[40px]"
-            />
-          </a>
-        </div>
-
-        <div class="w-[70%] max-lg:hidden">
-          <nav class="flex justify-center">
-            <ul class="flex gap-[56px] font-[Cormorant] text-2xl">
-              <li>
-                <a href="/#about" class="list-nav-item relative">about</a>
-              </li>
-              <li><a href="/#work" class="list-nav-item relative">work</a></li>
-              <li>
-                <a href="/#contact" class="list-nav-item relative">contact</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="flex w-[15%] items-center justify-end max-lg:w-full">
-          <button
-            id="hamburger-icon"
-            aria-label="Main Menu"
-            aria-expanded="false"
-            aria-controls="fullscreen-menu"
-            class="z-9999 cursor-pointer lg:hidden"
-          >
-            <svg width="40" height="40" viewBox="0 0 100 100">
-              <path
-                class="line line1"
-                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-              />
-              <path class="line line2" d="M 20,50 H 80" />
-              <path
-                class="line line3"
-                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div
-        id="fullscreen-menu"
-        class="pointer-events-none absolute top-0 z-9998 flex h-screen w-screen items-center justify-center bg-linear-to-br from-[#080808] via-[#080808] to-[#132054] transition-opacity duration-500 ease-in-out"
+      <span class="text-base font-bold text-white">
+        <a href="/" class="font-brawler">Dominium Ecom</a></span
       >
-        <ul
-          class="flex flex-col gap-[24px] text-center font-[Cormorant] text-2xl"
-        >
-          <li><a href="#about" class="list-nav-item relative">about</a></li>
-          <li><a href="#work" class="list-nav-item relative">work</a></li>
-          <li><a href="#contact" class="list-nav-item relative">contact</a></li>
-        </ul>
-      </div>
     </header>
 
-    <main class="flex flex-col items-center">
+    <main>
       <section
-        id="hero"
-        class="relative flex h-screen w-screen pt-18 max-sm:flex-col"
+        class="from-light-blue to-light-yellow flex h-[calc(100vh-48.5px)] w-full justify-center bg-linear-to-b px-10 py-24 max-lg:h-fit max-lg:px-4 max-lg:py-12"
       >
-        <div class="h-full w-[50%] px-4 py-4 max-sm:h-[50%] max-sm:w-full">
-          <div
-            id="hero-image"
-            class="h-full w-full rounded-2xl bg-[url('./assets/images/iansouisa2.jpeg')] bg-cover bg-center"
-          ></div>
-        </div>
         <div
-          class="flex h-full w-[50%] flex-col items-center justify-center gap-8 text-center font-[Comforter] text-9xl text-[#F2F2F2] max-sm:h-[50%] max-sm:w-full max-sm:text-7xl"
-        >
-          <h1 class="reveal z-9998">Ian<br />Souisa</h1>
-        </div>
-      </section>
-
-      <section id="about" class="flex px-10 py-24 max-sm:px-4 max-sm:py-13">
-        <div
-          class="flex max-w-[1280px] items-center gap-x-[96px] gap-y-[32px] max-lg:flex-col-reverse"
+          class="flex w-full max-w-[1280px] items-center gap-24 max-lg:flex-col-reverse max-lg:gap-12"
         >
           <div
-            class="reveal w-full bg-cover bg-center text-[#ABAEBA] delay-1 max-lg:w-full"
+            class="flex w-3/5 flex-col gap-2 max-lg:w-full max-lg:items-center"
           >
-            <h2 class="reveal-text w-fit text-left">About</h2>
-            <p>
-              My name is Ian Souisa, the founder of a done-for-you agency
-              specialized in email and SMS marketing for DTC eCommerce brands.
-              I'm not just an agency owner, I'm also a developer building SaaS
-              products to boost and automate my own agency, and I will soon
-              deploy my own SaaS products for everyone in the agency, coaching,
-              and consulting space.
+            <p class="text-lg font-bold max-lg:text-center">
+              For DTC Ecommerce brands:
             </p>
-          </div>
-          <div
-            class="flex w-full flex-row items-center gap-4 bg-cover bg-center max-lg:h-[50%] max-lg:w-full"
-          >
-            <div class="reveal flex h-[80%] w-[45%] items-center delay-1">
-              <img
-                src="assets/images/ian-souisa-workspace.jpeg"
-                alt="ian souisa ian-souisa-workspace"
-                class="aspect-4/5 w-full rounded-2xl object-cover"
-              />
-            </div>
-            <div class="reveal flex h-full w-[55%] items-center delay-1">
-              <img
-                src="assets/images/iansouisa.jpg"
-                alt="ian souisa"
-                class="z-10 aspect-4/5 w-full rounded-2xl object-cover shadow-[-17px_0_20px_rgba(0,0,0,0.3)]"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="work"
-        class="flex w-full flex-col items-center gap-8 px-10 py-24 max-sm:px-4 max-sm:py-13"
-      >
-        <h2 class="reveal-text">Work</h2>
-        <div
-          class="grid w-full max-w-[900px] grid-cols-2 gap-12 max-sm:grid-cols-1"
-        >
-          <div class="reveal flip-card aspect-5/4 w-full sm:delay-1">
-            <div class="flip-card-inner w-full">
-              <div
-                id="front-easylead"
-                class="flip-card-front w-full rounded-2xl bg-[url('./assets/images/easylead-ui.jpg')] bg-cover bg-center"
-              ></div>
-              <div
-                class="flip-card-back flex flex-col justify-center rounded-2xl p-5"
-              >
-                <h3>Easylead</h3>
-                <p>
-                  Easylead is the first and most powerful lead finder for B2B
-                  service providers that doesn't rely on a database. Imagine
-                  you're just using Google search to find leads but instead,
-                  that Googling is all done for you. How? Automated Google
-                  dorks. Google dorks are powerful, but automated Google dorks
-                  plus automated search results scraping makes it the most
-                  powerful lead finder to date.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="reveal flip-card aspect-5/4 w-full delay-1 sm:delay-2">
-            <div class="flip-card-inner w-full">
-              <div
-                id="front-mailforge"
-                class="flip-card-front w-full rounded-2xl bg-[url('./assets/images/mailforge-ui.jpg')] bg-cover bg-center"
-              ></div>
-              <div
-                class="flip-card-back flex flex-col justify-center rounded-2xl p-5"
-              >
-                <h3>MailForge</h3>
-                <p>
-                  MailForge is the fastest way to build email flows and
-                  campaigns for DTC eCommerce brands.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="reveal flip-card aspect-5/4 w-full sm:delay-1">
-            <div class="flip-card-inner w-full">
-              <div
-                class="flip-card-front w-full rounded-2xl bg-[url('./assets/images/symbiotic-thumbnail.jpg')] bg-cover bg-center"
-              ></div>
-              <div
-                class="flip-card-back flex flex-col justify-center rounded-2xl p-[24px]"
-              >
-                <h3>Symbiotic</h3>
-                <p>A Tailwind project</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="reveal flip-card aspect-5/4 w-full delay-1 sm:delay-2">
-            <div class="flip-card-inner w-full">
-              <div
-                class="flip-card-front w-full rounded-2xl bg-[url('./assets/images/favour-chocolate-thumbnail.jpg')] bg-cover bg-center"
-              ></div>
-              <div
-                class="flip-card-back flex flex-col justify-center rounded-2xl p-[24px]"
-              >
-                <h3>Favour Chocolate</h3>
-                <p>A Shopify project</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="contact"
-        class="flex w-full justify-center px-10 py-24 max-sm:px-4"
-      >
-        <div
-          class="flex w-full max-w-[1280px] flex-col items-center max-lg:flex-col"
-        >
-          <div class="flex items-center justify-center max-sm:w-full">
-            <h2 class="reveal-text">Contact</h2>
-          </div>
-
-          <div
-            class="flex flex-wrap gap-4 max-lg:flex-col max-sm:w-full max-sm:justify-center"
-          >
-            <a href="mailto:iansouisa@gmail.com" target="_blank">
-              <div
-                class="reveal flex h-full items-center gap-2 rounded-xl p-6 delay-1 max-lg:items-start"
-              >
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 512"
-                    class="h-[50px] w-[50px] text-white"
-                    fill="currentColor"
-                  >
-                    <path
-                      d="M125.4 128C91.5 128 64 155.5 64 189.4C64 190.3 64 191.1 64.1 192L64 192L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 192L575.9 192C575.9 191.1 576 190.3 576 189.4C576 155.5 548.5 128 514.6 128L125.4 128zM528 256.3L528 448C528 456.8 520.8 464 512 464L128 464C119.2 464 112 456.8 112 448L112 256.3L266.8 373.7C298.2 397.6 341.7 397.6 373.2 373.7L528 256.3zM112 189.4C112 182 118 176 125.4 176L514.6 176C522 176 528 182 528 189.4C528 193.6 526 197.6 522.7 200.1L344.2 335.5C329.9 346.3 310.1 346.3 295.8 335.5L117.3 200.1C114 197.6 112 193.6 112 189.4z"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-col">
-                  <h3 class="text-xl text-white">Mail</h3>
-                  <p class="text-sm">iansouisa@gmail.com</p>
-                </div>
-              </div>
+            <h1
+              class="font-brawler max-w-130 text-4xl text-black max-lg:text-center max-sm:text-2xl"
+            >
+              Reach <span class="bg-de-red text-white">35%</span> Email & SMS
+              attributed revenue in 60 days,
+              <i class="font-normal">or you don't pay</i>.
+            </h1>
+            <p
+              class="max-w-100 text-lg text-zinc-500 max-lg:text-center max-sm:text-base"
+            >
+              Scale profitably without spending more on ads or offering
+              unnecessary discounts
+            </p>
+            <a href="#schedule" class="button mt-6 w-fit">
+              <p>SCHEDULE A CALL</p>
             </a>
+          </div>
+          <div class="relative w-2/5 pr-4 pb-4 max-lg:w-full max-lg:max-w-90">
+            <img
+              loading="lazy"
+              src="./assets/images/klaviyo-dashboard.jpg"
+              alt="Klaviyo Dashboard"
+              class="w-full border border-[#00000015] shadow-xl"
+            />
+            <div
+              class="bg-bg-dark absolute right-0 bottom-0 px-8 py-3 shadow-xl"
+            >
+              <span class="font-brawler text-2xl font-normal text-white"
+                >GUARANTEED</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <a
-              href="https://www.linkedin.com/in/ian-souisa-761237361/"
-              target="_blank"
+      <section
+        class="flex w-full justify-center bg-linear-to-b from-[#131316] to-[#1f1f24] px-10 pt-24 pb-12 max-lg:px-4"
+      >
+        <div
+          class="flex w-full max-w-[1280px] flex-col items-center gap-24 max-lg:gap-12"
+        >
+          <h2 class="text-center text-white">
+            Our 3-step dominium<br />retention system
+          </h2>
+
+          <div class="relative flex w-full flex-col justify-center gap-24">
+            <!-- Step 1 -->
+            <div class="flex w-full justify-center gap-10 max-sm:gap-0">
+              <div class="w-full max-w-100 max-lg:hidden"></div>
+
+              <div class="relative z-0 h-full max-sm:-ml-8">
+                <div
+                  class="flex max-h-[140px] items-center justify-center rounded-[50%] border border-[#ffffff10] bg-linear-to-bl from-[rgba(201,74,57,0.2)] to-[rgba(31,31,36,0.2)] p-[35px]"
+                >
+                  <div
+                    class="bg-de-red flex h-[70px] w-[70px] items-center justify-center rounded-[50%]"
+                  >
+                    <span class="font-brawler text-3xl text-white">1</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-de-red absolute top-[105px] right-0 left-0 mx-auto h-[calc(100%+110px)] w-[2px]"
+                ></div>
+                <div
+                  class="absolute -top-[52.5px] -left-[52.5px] -z-1 h-60 w-60 rounded-[50%] bg-[#00000050]"
+                ></div>
+              </div>
+
+              <div
+                class="z-1 flex w-full max-w-100 flex-col gap-4 pt-[50px] max-lg:w-full max-sm:-ml-4"
+              >
+                <h3 class="text-white">List Growth Engine</h3>
+                <p class="text-lg text-zinc-300">
+                  We install high-converting systems that turn your existing
+                  traffic into subscribers. Every visitor and social interaction
+                  becomes a revenue opportunity without any extra ad spend.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div
+              class="flex w-full justify-center gap-10 max-lg:flex-row-reverse max-sm:gap-0"
             >
               <div
-                class="reveal flex h-full items-center gap-2 rounded-xl p-6 delay-2 max-lg:items-start"
+                class="z-1 flex w-full max-w-100 flex-col gap-4 pt-[50px] max-lg:w-full max-sm:-ml-4"
               >
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 640"
-                    class="h-[50px] w-[50px] text-white"
-                    fill="currentColor"
-                  >
-                    <!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-                    <path
-                      d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"
-                    />
-                  </svg>
-                </div>
-                <div class="flex flex-col">
-                  <h3 class="text-xl text-white">Linkedin</h3>
-                  <p class="text-sm">@iansouisa</p>
-                </div>
+                <h3 class="text-end text-white max-lg:text-start">
+                  Automated Flows
+                </h3>
+                <p class="text-end text-lg text-zinc-300 max-lg:text-start">
+                  We build your complete suite of revenue-generating flows.
+                  These work 24/7 to convert subscribers into buyers and
+                  one-time customers into repeat purchasers.
+                </p>
               </div>
-            </a>
+
+              <div class="relative z-0 h-full max-sm:-ml-8">
+                <div
+                  class="z-0 flex max-h-[140px] items-center justify-center rounded-[50%] border border-[#ffffff10] bg-linear-to-bl from-[rgba(201,74,57,0.2)] to-[rgba(31,31,36,0.2)] p-[35px] shadow-2xs"
+                >
+                  <div
+                    class="bg-de-red flex h-[70px] w-[70px] items-center justify-center rounded-[50%]"
+                  >
+                    <span class="font-brawler text-3xl text-white">2</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-de-red absolute top-[105px] right-0 left-0 mx-auto h-[calc(100%+30px)] w-[2px]"
+                ></div>
+                <div
+                  class="absolute -top-[52.5px] -left-[52.5px] -z-1 h-60 w-60 rounded-[50%] bg-[#00000040]"
+                ></div>
+              </div>
+
+              <div class="w-full max-w-100 max-lg:hidden"></div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex w-full justify-center gap-10 max-sm:gap-0">
+              <div class="w-full max-w-100 max-lg:hidden"></div>
+
+              <div class="relative z-0 h-full max-sm:-ml-8">
+                <div
+                  class="flex max-h-[140px] items-center justify-center rounded-[50%] border border-[#ffffff10] bg-linear-to-bl from-[rgba(201,74,57,0.2)] to-[rgba(31,31,36,0.2)] p-[35px]"
+                >
+                  <div
+                    class="bg-de-red flex h-[70px] w-[70px] items-center justify-center rounded-[50%]"
+                  >
+                    <span class="font-brawler text-3xl text-white">3</span>
+                  </div>
+                </div>
+                <div
+                  class="bg-de-red absolute top-[105px] right-0 left-0 mx-auto h-[calc(100%+90px)] w-[2px]"
+                ></div>
+                <div
+                  class="absolute -top-[52.5px] -left-[52.5px] -z-1 h-60 w-60 rounded-[50%] bg-[#00000050]"
+                ></div>
+              </div>
+
+              <div
+                class="z-1 flex w-full max-w-100 flex-col gap-4 pt-[50px] max-lg:w-full max-sm:-ml-4"
+              >
+                <h3 class="text-white">Strategic Campaigns</h3>
+                <p class="text-lg text-zinc-300">
+                  We deploy data-driven email and SMS campaigns that keep your
+                  brand top-of-mind and drive consistent revenue spikes.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div
+              class="flex w-full justify-center gap-10 max-lg:flex-row-reverse max-sm:gap-0"
+            >
+              <div
+                class="z-1 flex w-full max-w-100 flex-col gap-4 pt-[50px] max-lg:w-full max-sm:-ml-4"
+              >
+                <h3 class="text-end text-white max-lg:text-start">
+                  Continuous Optimization
+                </h3>
+                <p class="text-end text-lg text-zinc-300 max-lg:text-start">
+                  We analyze performance metrics weekly and refine every
+                  element. Your system gets stronger every month as we identify
+                  and scale what works.
+                </p>
+              </div>
+
+              <div class="relative z-0 h-full max-sm:-ml-8">
+                <div
+                  class="z-0 flex max-h-[140px] items-center justify-center rounded-[50%] border border-[#ffffff10] bg-linear-to-bl from-[rgba(201,74,57,0.2)] to-[rgba(31,31,36,0.2)] p-[35px] shadow-2xs"
+                >
+                  <div
+                    class="bg-de-red flex h-[70px] w-[70px] items-center justify-center rounded-[50%]"
+                  >
+                    <span class="font-brawler text-3xl text-white">4</span>
+                  </div>
+                </div>
+                <div
+                  class="absolute -top-[52.5px] -left-[52.5px] -z-1 h-60 w-60 rounded-[50%] bg-[#00000040]"
+                ></div>
+              </div>
+
+              <div class="w-full max-w-100 max-lg:hidden"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-bg-dark flex w-full justify-center px-10 py-24 max-lg:px-4 max-lg:py-12"
+      >
+        <div
+          class="flex w-full max-w-[700px] flex-col items-center gap-4 max-lg:flex-col"
+        >
+          <img
+            loading="lazy"
+            src="./assets/images/iansouisa.jpg"
+            alt="Ian Souisa"
+            class="h-32 rounded-full object-cover"
+          />
+          <h2 class="text-center text-white">We help brands scale.</h2>
+          <p class="text-center text-lg text-zinc-300">
+            I'm Ian Souisa, and over at Dominium Ecom, we specialize in helping
+            DTC eCommerce brands scale profitably, fast. With over 3 years of
+            experience in digital marketing and online presence, and having
+            worked with dozens of DTC companies, including Adidas, we understand
+            the entire customer journey, not just the inbox. This unique
+            perspective allows us to create compelling email & SMS flows and
+            campaigns that drive conversions from start to finish.
+          </p>
+          <div class="h-0.5 w-2/3 bg-zinc-700"></div>
+          <p class="text-center text-lg text-zinc-300">
+            If you’re tired of being stuck, we're here to help you break that
+            cycle.<br />Just book a call, and I’ll see you there.
+          </p>
+          <a href="#schedule" class="button mt-10 w-fit">
+            <p>SCHEDULE A CALL</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="flex w-full justify-center px-10 py-24 max-lg:px-4">
+        <div class="flex w-full max-w-[700px] flex-col items-center gap-13">
+          <h2 class="text-bg-dark">FAQ</h2>
+
+          <div class="flex min-w-full flex-col gap-6">
+            <!-- Item 1 -->
+            <div class="faq-item flex flex-col rounded-lg bg-[#00000008] p-4">
+              <!-- Trigger Area -->
+              <div
+                class="faq-trigger group flex cursor-pointer items-center gap-4 select-none"
+              >
+                <h3 class="question text-bg-dark z-1 w-full">
+                  What service does Dominium Ecom offer?
+                </h3>
+                <!-- Icon with transition class -->
+                <svg
+                  class="faq-icon transition-transform duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
+                  width="32"
+                  viewBox="0 0 640 640"
+                >
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                  <path
+                    fill="#1f1f24"
+                    d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z"
+                  />
+                </svg>
+              </div>
+              <!-- Answer (Hidden by default) -->
+              <div class="faq-answer">
+                <p class="mt-2 text-lg text-zinc-500">
+                  We are specialized in full-scale email and SMS marketing for
+                  DTC eCommerce brands. We handle everything: from strategizing
+                  and planning to reporting and deep optimization for your list
+                  growth, flows, and campaigns.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="faq-item flex flex-col rounded-lg bg-[#00000008] p-4">
+              <div
+                class="faq-trigger group flex cursor-pointer items-center gap-4 select-none"
+              >
+                <h3 class="question text-bg-dark w-full text-lg">
+                  What makes Dominium Ecom different?
+                </h3>
+                <svg
+                  class="faq-icon transition-transform duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
+                  width="32"
+                  viewBox="0 0 640 640"
+                >
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                  <path
+                    fill="#1f1f24"
+                    d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z"
+                  />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p class="mt-2 text-lg text-zinc-500">
+                  Other agencies only know the inbox; we understand the entire
+                  customer journey thanks to 3 years of experience in digital
+                  marketing and online presence. This allows us to create
+                  compelling emails & SMS messages that speak directly to your
+                  customers and drive conversions from start to finish.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="faq-item flex flex-col rounded-lg bg-[#00000008] p-4">
+              <div
+                class="faq-trigger group flex cursor-pointer items-center gap-4 select-none"
+              >
+                <h3 class="question text-bg-dark w-full text-lg">
+                  What if you don’t hit expected results?
+                </h3>
+                <svg
+                  class="faq-icon transition-transform duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
+                  width="32"
+                  viewBox="0 0 640 640"
+                >
+                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                  <path
+                    fill="#1f1f24"
+                    d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z"
+                  />
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p class="mt-2 text-lg text-zinc-500">
+                  If email & SMS do not attribute to at least 35% of your
+                  brand's total revenue in 60 days, you don’t pay.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="flex w-full justify-center px-10 py-24 max-lg:px-4"
+        id="schedule"
+      >
+        <div
+          class="flex w-full max-w-[1280px] items-center gap-20 max-lg:flex-col max-lg:gap-12"
+        >
+          <div
+            class="flex w-full max-w-[400px] flex-col gap-8 max-lg:max-w-[600] max-lg:items-center"
+          >
+            <h2
+              class="text-bg-dark text-4xl max-lg:text-center max-sm:text-2xl"
+            >
+              Book Your Free<br />Discovery Call
+            </h2>
+            <ul class="font-dm-sans flex flex-col gap-3 text-lg">
+              <li>Discuss where you’re at and where you want to be</li>
+              <li>
+                Receive tailored strategies to identify revenue opportunities
+                specific to your brand
+              </li>
+              <li>
+                Get direct access to industry insights from a digital marketing
+                expert who has helped brands like Adidas scale
+              </li>
+              <li>This call is completely free and risk-free</li>
+            </ul>
+          </div>
+          <div class="w-full max-lg:w-full">
+            <!-- Cal inline embed code begins -->
+            <div
+              style="width: 100%; height: 100%; overflow: scroll"
+              id="my-cal-inline-discovery-call"
+            ></div>
+            <script type="text/javascript">
+              (function (C, A, L) {
+                let p = function (a, ar) {
+                  a.q.push(ar);
+                };
+                let d = C.document;
+                C.Cal =
+                  C.Cal ||
+                  function () {
+                    let cal = C.Cal;
+                    let ar = arguments;
+                    if (!cal.loaded) {
+                      cal.ns = {};
+                      cal.q = cal.q || [];
+                      d.head.appendChild(d.createElement("script")).src = A;
+                      cal.loaded = true;
+                    }
+                    if (ar[0] === L) {
+                      const api = function () {
+                        p(api, arguments);
+                      };
+                      const namespace = ar[1];
+                      api.q = api.q || [];
+                      if (typeof namespace === "string") {
+                        cal.ns[namespace] = cal.ns[namespace] || api;
+                        p(cal.ns[namespace], ar);
+                        p(cal, ["initNamespace", namespace]);
+                      } else p(cal, ar);
+                      return;
+                    }
+                    p(cal, ar);
+                  };
+              })(window, "https://app.cal.com/embed/embed.js", "init");
+              Cal("init", "discovery-call", { origin: "https://app.cal.com" });
+
+              Cal.ns["discovery-call"]("inline", {
+                elementOrSelector: "#my-cal-inline-discovery-call",
+                config: {
+                  layout: "month_view",
+                  useSlotsViewOnSmallScreen: "true",
+                },
+                calLink: "team/dominium-ecom/discovery-call",
+              });
+
+              Cal.ns["discovery-call"]("ui", {
+                cssVarsPerTheme: { dark: { "cal-brand": "#c94a39" } },
+                hideEventTypeDetails: false,
+                layout: "month_view",
+              });
+            </script>
+            <!-- Cal inline embed code ends -->
           </div>
         </div>
       </section>
     </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select all individual FAQ items
+        const faqItems = document.querySelectorAll(".faq-item");
 
-    <footer class="flex w-full flex-col items-center">
-      <div class="flex w-full flex-col items-center gap-y-6 py-4">
-        <a href="/">
-          <img
-            src="./assets/logo/ids-logo.svg"
-            alt="ian souisa logo"
-            class="logo w-[40px]"
-          />
-        </a>
-        <p class="text-xs">© 2025 Ian Souisa. All rights reserved.</p>
-      </div>
+        faqItems.forEach((item) => {
+          const trigger = item.querySelector(".faq-trigger");
+          const answer = item.querySelector(".faq-answer");
+          const icon = item.querySelector(".faq-icon");
+
+          trigger.addEventListener("click", () => {
+            // Close other open items (Accordion style)
+            faqItems.forEach((otherItem) => {
+              if (otherItem !== item && otherItem.classList.contains("open")) {
+                otherItem.classList.remove("open");
+                const otherAnswer = otherItem.querySelector(".faq-answer");
+                otherAnswer.style.maxHeight = 0;
+                otherItem.querySelector(".faq-icon").style.transform =
+                  "rotate(0deg)";
+              }
+            });
+
+            // Toggle the clicked item
+            item.classList.toggle("open");
+            if (item.classList.contains("open")) {
+              answer.style.maxHeight = answer.scrollHeight + "px";
+              icon.style.transform = "rotate(180deg)";
+            } else {
+              answer.style.maxHeight = 0;
+              icon.style.transform = "rotate(0deg)";
+            }
+          });
+        });
+      });
+    </script>
+    <footer
+      class="bg-bg-dark flex w-full justify-center gap-12 py-4 text-xs text-zinc-400"
+    >
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms-and-conditions/">Terms and Conditions</a>
     </footer>
-    <script src="index.js"></script>
   </body>
 </html>
