@@ -1,0 +1,106 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+@layer utilities {
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    /* Make background transparent */
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    box-shadow: 0 0 0px 1000px transparent inset !important;
+
+    /* Keep text color consistent */
+    -webkit-text-fill-color: #f2f2f2 !important;
+
+    /* Prevent autofill background animation */
+    transition: background-color 5000s ease-in-out 0s !important;
+  }
+}
+
+p,
+label,
+input,
+span {
+  font-family: "Montserrat";
+  color: #abaeba;
+  line-height: 1.8em;
+  font-weight: 400;
+}
+#bot_footer p,
+#bot_footer a {
+  font-family: "Montserrat";
+  color: #abaeba;
+  font-size: 12px;
+  line-height: 1.5em;
+  font-weight: 400;
+}
+input {
+  color: #f2f2f2;
+}
+#submit:hover {
+  color: #121212;
+}
+h1 {
+  color: #f2f2f2;
+  font-family: "Comforter";
+}
+h2 {
+  color: #f2f2f2;
+  font-size: 80px;
+  font-family: "Comforter";
+}
+h3 {
+  font-family: "Montserrat";
+}
+
+@media screen and (max-width: 641px) {
+  h2 {
+    font-size: 56px;
+  }
+}
+
+/* Blogs CSS */
+.blog-card {
+  border-bottom: 1px solid #abaeba;
+  padding: 32px 0;
+  width: 100%;
+}
+.blog-card h2 {
+  margin: 0 0 10px;
+}
+.blog-card a {
+  text-decoration: none;
+}
+.blog-card a:hover {
+  color: #abaeba;
+}
+
+/* Post CSS */
+#back-link {
+  text-decoration: none;
+  color: #555;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#blog-container h3 {
+  font-family: "Cormorant";
+  font-size: 32px;
+  color: white;
+}
+.date {
+  display: block;
+  margin-bottom: 20px;
+}
+.content {
+  line-height: 1.6;
+}
+#post-container h2 {
+  font-family: "Cormorant";
+  font-size: 48px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
