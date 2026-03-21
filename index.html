@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/assets/icons/ids-favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/src/assets/icons/ids-favicon.png"
+    />
     <link rel="stylesheet" href="/dist/css/output.css" />
     <link rel="stylesheet" href="/src/css/animations.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,7 +49,7 @@
         <div class="w-[15%] max-lg:w-full">
           <a href="/" class="w-[40px]">
             <img
-              src="/assets/logo/ids-logo.svg"
+              src="/src/assets/logo/ids-logo.svg"
               alt="ian souisa logo"
               class="logo relative z-9999 w-[40px]"
             />
@@ -111,7 +115,7 @@
         <div class="h-full w-[50%] px-4 py-4 max-sm:h-[50%] max-sm:w-full">
           <div
             id="hero-image"
-            class="h-full w-full rounded-2xl bg-[url('/assets/images/iansouisa2.jpeg')] bg-cover bg-center"
+            class="h-full w-full rounded-2xl bg-[url('/src/assets/images/iansouisa2.jpeg')] bg-cover bg-center"
           ></div>
         </div>
         <div
@@ -130,11 +134,9 @@
           >
             <h2 class="reveal-text w-fit text-left">About</h2>
             <p>
-              My name is Ian Souisa, the founder of a done-for-you agency
-              specialized in email and SMS marketing for DTC ecom brands. I'm
-              not just an agency owner, I'm also a developer building SaaS
-              products to boost and automate my own agency, with plans of
-              launching one of these to the public.
+              Mijn naam is Ian Souisa, ik ben webdesign, developer, en
+              toekomstige SaaS founder. Ik ben altijd aan het leren, of het nu
+              gaat over nieuwe tools of ondernemen.
             </p>
           </div>
           <div
@@ -142,14 +144,14 @@
           >
             <div class="reveal flex h-[80%] w-[45%] items-center delay-1">
               <img
-                src="/assets/images/jetski-ian.jpg"
+                src="/src/assets/images/jetski-ian.jpg"
                 alt="ian souisa ian-souisa-workspace"
                 class="aspect-4/5 w-full rounded-2xl object-cover"
               />
             </div>
             <div class="reveal flex h-full w-[55%] items-center delay-1">
               <img
-                src="/assets/images/ian-souisa-workspace.jpeg"
+                src="/src/assets/images/ian-souisa-workspace.jpeg"
                 alt="ian souisa"
                 class="z-10 aspect-4/5 w-full rounded-2xl object-cover shadow-[-17px_0_20px_rgba(0,0,0,0.3)]"
               />
@@ -163,69 +165,156 @@
         class="flex w-full flex-col items-center gap-8 px-10 py-24 max-sm:px-4 max-sm:py-13"
       >
         <h2 class="reveal-text">Work</h2>
-        <div
-          class="grid w-full max-w-[900px] grid-cols-2 gap-12 max-sm:grid-cols-1"
-        >
-          <div class="reveal flip-card aspect-5/4 w-full sm:delay-1">
-            <div class="flip-card-inner w-full">
-              <div
-                id="front-easylead"
-                class="flip-card-front w-full rounded-2xl bg-[url('/assets/images/easylead-ui.jpg')] bg-cover bg-center"
-              ></div>
-              <div
-                class="flip-card-back flex flex-col justify-center rounded-2xl p-5"
+        <div class="w-full max-w-[900px]">
+          <div class="reveal group cursor-default border-t border-[#ffffff15]">
+            <div class="flex items-center gap-6 py-6">
+              <span
+                class="w-8 shrink-0 font-[Montserrat] text-xs text-[#ABAEBA]"
+                >01</span
               >
-                <h3>Easylead</h3>
-                <p>Easylead is the fastest lead sourcer</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="reveal flip-card aspect-5/4 w-full delay-1 sm:delay-2">
-            <div class="flip-card-inner w-full">
-              <div
-                id="front-mailforge"
-                class="flip-card-front w-full rounded-2xl bg-[url('/assets/images/mailforge-ui.jpg')] bg-cover bg-center"
-              ></div>
-              <div
-                class="flip-card-back flex flex-col justify-center rounded-2xl p-5"
-              >
-                <h3>MailForge</h3>
-                <p>
-                  MailForge is the fastest way to build email flows and
-                  campaigns for DTC eCommerce brands.
+              <div class="flex-1">
+                <h3
+                  class="font-[Cormorant] text-4xl leading-none text-[#F2F2F2] max-sm:text-2xl"
+                >
+                  Easylead
+                </h3>
+                <p class="mt-1 font-[Montserrat] text-xs text-[#ABAEBA]">
+                  The fastest lead sourcer
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div class="reveal flip-card aspect-5/4 w-full sm:delay-1">
-            <div class="flip-card-inner w-full">
-              <div
-                class="flip-card-front w-full rounded-2xl bg-[url('/assets/images/symbiotic-thumbnail.jpg')] bg-cover bg-center"
-              ></div>
-              <div
-                class="flip-card-back flex flex-col justify-center rounded-2xl p-[24px]"
+              <span
+                class="shrink-0 font-[Montserrat] text-xs tracking-[0.2em] text-[#ABAEBA] uppercase"
+                >SaaS</span
               >
-                <h3>Symbiotic</h3>
-                <p>A Tailwind project</p>
+            </div>
+            <div
+              class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out group-hover:grid-rows-[1fr] group-hover:[transition-delay:0ms]"
+            >
+              <div class="overflow-hidden">
+                <div class="pb-6">
+                  <img
+                    src="/src/assets/images/easylead.jpg"
+                    alt="Easylead"
+                    class="w-full rounded-xl"
+                  />
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="reveal flip-card aspect-5/4 w-full delay-1 sm:delay-2">
-            <div class="flip-card-inner w-full">
-              <div
-                class="flip-card-front w-full rounded-2xl bg-[url('/assets/images/favour-chocolate-thumbnail.jpg')] bg-cover bg-center"
-              ></div>
-              <div
-                class="flip-card-back flex flex-col justify-center rounded-2xl p-[24px]"
+          <div
+            class="reveal group cursor-default border-t border-[#ffffff15] delay-1"
+          >
+            <div class="flex items-center gap-6 py-6">
+              <span
+                class="w-8 shrink-0 font-[Montserrat] text-xs text-[#ABAEBA]"
+                >02</span
               >
-                <h3>Favour Chocolate</h3>
-                <p>A Shopify project</p>
+              <div class="flex-1">
+                <h3
+                  class="font-[Cormorant] text-4xl leading-none text-[#F2F2F2] max-sm:text-2xl"
+                >
+                  MailForge
+                </h3>
+                <p class="mt-1 font-[Montserrat] text-xs text-[#ABAEBA]">
+                  Email flows for DTC eCommerce
+                </p>
+              </div>
+              <span
+                class="shrink-0 font-[Montserrat] text-xs tracking-[0.2em] text-[#ABAEBA] uppercase"
+                >SaaS</span
+              >
+            </div>
+            <div
+              class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out group-hover:grid-rows-[1fr] group-hover:[transition-delay:0ms]"
+            >
+              <div class="overflow-hidden">
+                <div class="pb-6">
+                  <img
+                    src="/src/assets/images/mailforge-ui.jpg"
+                    alt="MailForge"
+                    class="w-full rounded-xl"
+                  />
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="reveal group cursor-default border-t border-[#ffffff15]">
+            <div class="flex items-center gap-6 py-6">
+              <span
+                class="w-8 shrink-0 font-[Montserrat] text-xs text-[#ABAEBA]"
+                >03</span
+              >
+              <div class="flex-1">
+                <h3
+                  class="font-[Cormorant] text-4xl leading-none text-[#F2F2F2] max-sm:text-2xl"
+                >
+                  Symbiotic
+                </h3>
+                <p class="mt-1 font-[Montserrat] text-xs text-[#ABAEBA]">
+                  A Tailwind project
+                </p>
+              </div>
+              <span
+                class="shrink-0 font-[Montserrat] text-xs tracking-[0.2em] text-[#ABAEBA] uppercase"
+                >Tailwind</span
+              >
+            </div>
+            <div
+              class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out group-hover:grid-rows-[1fr] group-hover:[transition-delay:0ms]"
+            >
+              <div class="overflow-hidden">
+                <div class="pb-6">
+                  <img
+                    src="/src/assets/images/symbiotic-thumbnail.jpg"
+                    alt="Symbiotic"
+                    class="w-full rounded-xl"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="reveal group cursor-default border-t border-[#ffffff15] delay-1"
+          >
+            <div class="flex items-center gap-6 py-6">
+              <span
+                class="w-8 shrink-0 font-[Montserrat] text-xs text-[#ABAEBA]"
+                >04</span
+              >
+              <div class="flex-1">
+                <h3
+                  class="font-[Cormorant] text-4xl leading-none text-[#F2F2F2] max-sm:text-2xl"
+                >
+                  Favour Chocolate
+                </h3>
+                <p class="mt-1 font-[Montserrat] text-xs text-[#ABAEBA]">
+                  A Shopify project
+                </p>
+              </div>
+              <span
+                class="shrink-0 font-[Montserrat] text-xs tracking-[0.2em] text-[#ABAEBA] uppercase"
+                >Shopify</span
+              >
+            </div>
+            <div
+              class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out group-hover:grid-rows-[1fr] group-hover:[transition-delay:0ms]"
+            >
+              <div class="overflow-hidden">
+                <div class="pb-6">
+                  <img
+                    src="/src/assets/images/favour-chocolate-thumbnail.jpg"
+                    alt="Favour Chocolate"
+                    class="w-full rounded-xl"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-b border-[#ffffff15]"></div>
         </div>
       </section>
 
@@ -301,7 +390,7 @@
       <div class="flex w-full flex-col items-center gap-y-6 py-4">
         <a href="/">
           <img
-            src="/assets/logo/ids-logo.svg"
+            src="/src/assets/logo/ids-logo.svg"
             alt="ian souisa logo"
             class="logo w-[40px]"
           />

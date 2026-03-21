@@ -71,3 +71,46 @@ const observer = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+const activeSections = new Set();
+const navSections = document.querySelectorAll("#about, #work, #contact");
+
+function updateActiveNav() {
+  const atBottom =
+    window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 5;
+
+  let topSection = null;
+
+  if (atBottom) {
+    topSection = document.querySelector("#contact");
+  } else {
+    activeSections.forEach((section) => {
+      if (!topSection || section.getBoundingClientRect().top < topSection.getBoundingClientRect().top) {
+        topSection = section;
+      }
+    });
+  }
+
+  navSections.forEach((section) => {
+    const links = document.querySelectorAll(`[href*="#${section.id}"]`);
+    links.forEach((link) => link.classList.toggle("active", section === topSection));
+  });
+}
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        activeSections.add(entry.target);
+      } else {
+        activeSections.delete(entry.target);
+      }
+    });
+    updateActiveNav();
+  },
+  { rootMargin: "0px 0px -70% 0px" },
+);
+
+navSections.forEach((section) => sectionObserver.observe(section));
+
+window.addEventListener("scroll", updateActiveNav, { passive: true });

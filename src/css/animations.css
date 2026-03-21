@@ -77,7 +77,8 @@
   transform-origin: right center;
   transition: transform 0.2s ease-in-out;
 }
-.list-nav-item:hover::after {
+.list-nav-item:hover::after,
+.list-nav-item.active::after {
   transform: scaleX(1);
   transform-origin: left center;
 }
@@ -178,13 +179,13 @@
   padding: 24px;
 }
 #front-easylead {
-  background-image: url(./assets/images/easylead.jpg);
+  background-image: url(/src/assets/images/easylead.jpg);
 }
 #front-mailforge {
-  background-image: url(./assets/images/mailforge.jpg);
+  background-image: url(/src/assets/images/mailforge.jpg);
 }
 #hero-image {
-  background-image: url("./assets/images/iansouisa2.jpeg");
+  background-image: url(/src/assets/images/iansouisa2.jpeg);
   transform: scaleX(-1);
 }
 
