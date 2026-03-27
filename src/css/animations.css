@@ -189,6 +189,10 @@
   transform: scaleX(-1);
 }
 
+.work-card {
+  will-change: transform, filter, opacity;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(48px);

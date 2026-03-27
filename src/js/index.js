@@ -114,3 +114,28 @@ const sectionObserver = new IntersectionObserver(
 navSections.forEach((section) => sectionObserver.observe(section));
 
 window.addEventListener("scroll", updateActiveNav, { passive: true });
+
+const workCards = document.querySelectorAll(".work-card");
+
+function updateWorkCards() {
+  workCards.forEach((card, i) => {
+    const rect = card.getBoundingClientRect();
+    const next = workCards[i + 1];
+    if (!next) {
+      card.style.filter = "";
+      card.style.opacity = "";
+      return;
+    }
+    const nextRect = next.getBoundingClientRect();
+    const rawOverlap = 1 - nextRect.top / window.innerHeight;
+    const overlap = Math.max(0, Math.min(1, (rawOverlap - 0.3) / 0.7));
+    const blur = overlap * 12;
+    const scale = 1 - overlap * 0.05;
+    const opacity = 1 - overlap * 0.7;
+    card.style.filter = `blur(${blur}px)`;
+    card.style.transform = `scale(${scale})`;
+    card.style.opacity = opacity;
+  });
+}
+
+window.addEventListener("scroll", updateWorkCards, { passive: true });
