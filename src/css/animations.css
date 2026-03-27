@@ -179,13 +179,13 @@
   padding: 24px;
 }
 #front-easylead {
-  background-image: url(/src/assets/images/easylead.jpg);
+  background-image: url(../assets/images/easylead.jpg);
 }
 #front-mailforge {
-  background-image: url(/src/assets/images/mailforge.jpg);
+  background-image: url(../assets/images/mailforge.jpg);
 }
 #hero-image {
-  background-image: url(/src/assets/images/iansouisa2.jpeg);
+  background-image: url(../assets/images/iansouisa2.jpeg);
   transform: scaleX(-1);
 }
 
